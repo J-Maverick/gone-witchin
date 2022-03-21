@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4556280727260534221}
   - component: {fileID: 8267590321124633140}
   - component: {fileID: 2043195473908564131}
-  - component: {fileID: 3527211468014211334}
+  - component: {fileID: 2386587679938269593}
   - component: {fileID: 2134249352727197287}
   m_Layer: 0
   m_Name: bottleBanana
@@ -108,7 +108,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3527211468014211334
+--- !u!114 &2386587679938269593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,12 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3778794428397965175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdac1bfa6ecf9241b6bd78ce02dc93a, type: 3}
+  m_Script: {fileID: 11500000, guid: 17fda90f61600fc4fa97c75fb1b13cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pourThreshold: 0.6
-  pourPositionThreshold: 2
-  particleEmissionRate: 500
+  tooltipText: 
+  itemName: 
 --- !u!65 &2134249352727197287
 BoxCollider:
   m_ObjectHideFlags: 0

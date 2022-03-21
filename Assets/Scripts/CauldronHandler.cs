@@ -39,6 +39,11 @@ public class CauldronHandler : MonoBehaviour
 
         musicController.GetComponent<Animator>().SetBool("isCooking", true);
 
+        materials[2].EnableKeyword("_EMISSION");
+        materials[3].EnableKeyword("_EMISSION");
+        materials[4].EnableKeyword("_EMISSION");
+        materials[6].EnableKeyword("_EMISSION");
+        materials[5].EnableKeyword("_EMISSION");
     }
 
     // Update is called once per frame
@@ -95,28 +100,31 @@ public class CauldronHandler : MonoBehaviour
     {
         if (fillLevel >= 0.01F)
         {
-            materials[2].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.6F));
-            materials[2].EnableKeyword("_EMISSION");
+            materials[2].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.25F));
         }
         if (fillLevel >= 0.25F)
         {
-            materials[3].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.6F));
-            materials[3].EnableKeyword("_EMISSION");
+            materials[3].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.25F));
         }
         if (fillLevel >= 0.5F)
         {
-            materials[4].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.6F));
-            materials[4].EnableKeyword("_EMISSION");
+            materials[4].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.25F));
         }
         if (fillLevel >= 0.75F)
         {
-            materials[6].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.6F));
-            materials[6].EnableKeyword("_EMISSION");
+            materials[6].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.25F));
         }
         if (fillLevel >= 0.99F)
         {
-            materials[5].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.6F));
-            materials[5].EnableKeyword("_EMISSION");
+            materials[5].SetColor("_EmissionColor", Color.Lerp(Color.blue, Color.green, 0.25F));
+        }
+        if (fillLevel < 0.01F)
+        {
+            materials[2].SetColor("_EmissionColor", Color.black);
+            materials[3].SetColor("_EmissionColor", Color.black);
+            materials[4].SetColor("_EmissionColor", Color.black);
+            materials[6].SetColor("_EmissionColor", Color.black);
+            materials[5].SetColor("_EmissionColor", Color.black);
         }
     }
     
