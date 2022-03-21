@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7156742030643501641
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222690, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_Name
+      value: DemonicStrengthPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: shopValue
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: potionName
+      value: Demonic Strength
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: tooltipText
+      value: Demolish your enemies, or impress your one special friend...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.g
+      value: 0.25803506
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.r
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleMetallic
+      value: 0.836
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleEmissionColor.b
+      value: 0.0036133714
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleEmissionColor.g
+      value: 0.0036133714
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleEmissionColor.r
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].numParts
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1555189505542452941, guid: 54a1e2312b5d05f4dade2a0077b49e60, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 6675288571265314663, guid: 2d0c252766faafc40b94620e40546038, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}

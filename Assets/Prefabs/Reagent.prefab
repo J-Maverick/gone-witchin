@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1174235251762270856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174235251762270858}
+  - component: {fileID: 1174235251762270857}
+  m_Layer: 0
+  m_Name: Reagent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174235251762270858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174235251762270856}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1174235251762270857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174235251762270856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea850a45337af34583354cf9e33a277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reagentName: Generic
+  bottleType: 4
+  bottleColor: {r: 1, g: 1, b: 1, a: 0}
+  bottleEmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  bottleMetallic: 0
+  bottleSmoothness: 0.5
+  pourColor: {r: 0, g: 0, b: 0, a: 0}
+  pourEmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  pourMetallic: 0
+  pourSmoothness: 0
+  maxFillLevel: 0.5
+  shopValue: 10
+  createMode: 0
+  cauldron: {fileID: 0}
+  handlerType: 1
+  flowRate: 0
+  colorLock: 0
+  bottle1Prefab: {fileID: 3778794428397965175, guid: 3aea1ee038830054a8110b87918890ff, type: 3}
+  bottle2Prefab: {fileID: 4252151068402615719, guid: 0d9871287b31cbc44b973f06cc08924c, type: 3}
+  bottle3Prefab: {fileID: 594433153830032268, guid: 02eae4d6304ce0242b819f7d1de117a2, type: 3}
+  bottle4Prefab: {fileID: 4545264045324655823, guid: 818768f71193dfc45b6143a9c48e3de9, type: 3}
+  bottle5Prefab: {fileID: 5072987992179697381, guid: a8a450e618bbff040ac798b5a261b0b0, type: 3}
+  bottle6Prefab: {fileID: 5801112269781193124, guid: 5c47cbdb277fd714cbf0c643d72b2720, type: 3}
+  bottle7Prefab: {fileID: 8573722669622117702, guid: 02654ae75cf4c9342befd437eb1b2f37, type: 3}
+  bottle8Prefab: {fileID: 2241979367151262038, guid: 0569eae5dc1243544957807b0f2bdaf5, type: 3}
+  bottle9Prefab: {fileID: 2824484122326807159, guid: 75972cbde30752f4f8a45fe19bba68d2, type: 3}
+  bottle10Prefab: {fileID: 2144306627039382090, guid: e451ed063a99fb947926a103b836a90f, type: 3}
+  bottle11Prefab: {fileID: 5103535470668254919, guid: 2b4de990b1b20e54f911df2165c94f9c, type: 3}
+  bottle12Prefab: {fileID: 876935568449274235, guid: a7f81c566c5293d43adad0981854db45, type: 3}
+  bottle13Prefab: {fileID: 3565091736619359952, guid: c703eb8ae7167de40b073c2be15fe00b, type: 3}
+  bottle14Prefab: {fileID: 1973549798185268344, guid: 7808325519fcfcb40ba26bfcb5a599a0, type: 3}
+  bottle15Prefab: {fileID: 7364376542063779798, guid: 5805f7ccc46748e45ae44b0d0d3c9d2d, type: 3}
+  bottle16Prefab: {fileID: 1891486676915185177, guid: 86a47270a09e3084cace64fddd46086f, type: 3}
+  bottle17Prefab: {fileID: 5223748267303157434, guid: 00524005ca2a4b845a58be883c18333d, type: 3}
+  bottle18Prefab: {fileID: 7458464744669166489, guid: f23e921e5c0909648971550f261cb6d1, type: 3}
+  bottle19Prefab: {fileID: 3524738459585727280, guid: e300c34f3da096340b83ec315dd292aa, type: 3}
+  bottle20Prefab: {fileID: 8374822315761606795, guid: 9a0043a78ffcc0843b0a42c0e7e04736, type: 3}
+  bottle21Prefab: {fileID: 2961201803755694377, guid: 37c7f35b1f7d2b44789b677d6eaa4069, type: 3}
+  bottle22Prefab: {fileID: 5210229859686351428, guid: 7c3b8809864046a4c920b60e09e91268, type: 3}
+  bottle23Prefab: {fileID: 3430162787916227456, guid: 609dc2e8461c4514c9dd28bb30834805, type: 3}
+  bottle24Prefab: {fileID: 1672812017334237504, guid: 0f54d29636b4700488c859622bc2a3d1, type: 3}
+  bottle25Prefab: {fileID: 873621868540876745, guid: 0c0f5917fc3b0224fb1a364da78c6389, type: 3}
+  bottle26Prefab: {fileID: 3542983046519277852, guid: e506d1f93864caf4fb12701ebbf17b1b, type: 3}

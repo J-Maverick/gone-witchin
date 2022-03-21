@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7268117678352690460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222690, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_Name
+      value: ParalysisPunchPotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: shopValue
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleType
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: potionName
+      value: Paralysis Punch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: tooltipText
+      value: 'If you focus on moving your big toe, you may become free. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.b
+      value: 0.48490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.r
+      value: 0.99793434
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].numParts
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 4953452373785036772, guid: d28ebad153102fd41adb2b560fbdbb22, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 6061477237464642135, guid: 8e4cfbbaf833c5a4da60d6d093dc8f9f, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}

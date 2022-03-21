@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6355604176065050380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222690, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_Name
+      value: HighSpiritsPotion Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: shopValue
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleType
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: potionName
+      value: High Spirits
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: tooltipText
+      value: Beloved by the rich and those who live in the streets. Prolonged use
+        attracts dark vermin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.b
+      value: 0.99718153
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.g
+      value: 0.82452834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleMetallic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.845
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].numParts
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[2].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1698301378640824859, guid: 93ba4e8a4ed93ec4681ecb2e53e19837, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 6061477237464642135, guid: 8e4cfbbaf833c5a4da60d6d093dc8f9f, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 2549403974592347512, guid: 67684e9061348fc4ea40a5ee63530fc5, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}

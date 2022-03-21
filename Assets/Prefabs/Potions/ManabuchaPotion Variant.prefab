@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &256199658965578581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222688, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222690, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: m_Name
+      value: ManabuchaPotion Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: shopValue
+      value: 330
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleType
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: potionName
+      value: Manabucha
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: tooltipText
+      value: Really puts a pep in your step!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.b
+      value: 0.1830188
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleColor.r
+      value: 0.7659278
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleMetallic
+      value: 0.698
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].numParts
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[2].numParts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 4953452373785036772, guid: d28ebad153102fd41adb2b560fbdbb22, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 430968513451393940, guid: 91da5c7add0325544829728b024f7f5e, type: 3}
+    - target: {fileID: 8097764830629222691, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1698301378640824859, guid: 93ba4e8a4ed93ec4681ecb2e53e19837, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c70922b8ff40df74b92a1ccb0b4a67b8, type: 3}

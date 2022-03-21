@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5487625320458325272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5487625320458325274}
+  - component: {fileID: 5487625320458325273}
+  m_Layer: 0
+  m_Name: Reagent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5487625320458325274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487625320458325272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5487625320458325273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487625320458325272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea850a45337af34583354cf9e33a277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reagentName: generic
+  bottleType: 0
+  bottleColor: {r: 0, g: 0, b: 0, a: 0}
+  pourColor: {r: 0, g: 0, b: 0, a: 0}
+  maxFillLevel: 0.5
+  shopValue: 10
+  cauldron: {fileID: 0}
+  handlerType: 1
+  flowRate: 0
+  bottle1Prefab: {fileID: 100000, guid: 9f7588a70a70b124cbb9d1fdfd73abd8, type: 3}
+  bottle2Prefab: {fileID: 100000, guid: bffcb6aad67ef96488dc4f02564378fd, type: 3}
+  bottle3Prefab: {fileID: 756427579616969452, guid: 2294043ec28a1d44197b1f62b4bde490, type: 3}

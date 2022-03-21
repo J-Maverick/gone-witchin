@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &565813796333508755
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1174235251762270856, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_Name
+      value: PondWater Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: shopValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.b
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.g
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.r
+      value: 0.13333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: reagentName
+      value: Pond Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: tooltipText
+      value: Brackish and sweet, full of little pond friends.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourMetallic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.b
+      value: 0.5377358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.g
+      value: 0.24579336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.r
+      value: 0.13443395
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourSmoothness
+      value: 0.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 346bfbc227412b5489f99a5b155672de, type: 3}

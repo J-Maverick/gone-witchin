@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1562928467617386780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1174235251762270856, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_Name
+      value: ShockBlast Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: shopValue
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: createMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.b
+      value: 0.7626914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.g
+      value: 0.96828264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourColor.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: reagentName
+      value: Shock Blast
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: tooltipText
+      value: 'The sole reason you wear a hat. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourMetallic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.b
+      value: 0.28773582
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.g
+      value: 0.9431165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleMetallic
+      value: 0.103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleSmoothness
+      value: 0.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourEmissionColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourEmissionColor.g
+      value: 0.94415843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: pourEmissionColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleEmissionColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleEmissionColor.g
+      value: 0.17181243
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270857, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: bottleEmissionColor.r
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174235251762270858, guid: 346bfbc227412b5489f99a5b155672de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 346bfbc227412b5489f99a5b155672de, type: 3}

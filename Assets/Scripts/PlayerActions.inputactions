@@ -1,0 +1,54 @@
+{
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "Cauldron",
+            "id": "9a6dfe2b-bb69-46d5-899b-8748c2cde8a7",
+            "actions": [
+                {
+                    "name": "FanFlame",
+                    "type": "Button",
+                    "id": "7445a6bf-d5f7-4bdc-9f1a-2c963e13cbcf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pointer",
+                    "type": "PassThrough",
+                    "id": "1cdc236b-beb3-4082-8ac7-af0c39caed57",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ba3bd966-df96-49b7-81b7-c16d2f428512",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FanFlame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb2876e5-25a9-4011-b9ce-fd356d870b01",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
