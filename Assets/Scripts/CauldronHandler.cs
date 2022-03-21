@@ -223,6 +223,10 @@ public class CauldronHandler : MonoBehaviour
         }
     }
 
+    public void SetPotionCrafted(GameObject potionToSet)
+    {
+        potionCrafted = potionToSet;
+    }
 
     public void TriggerFailure()
     {
@@ -252,8 +256,11 @@ public class CauldronHandler : MonoBehaviour
 
         reagents = new List<Reagent>();
         player.GetComponent<DragAndDrop>().draggingAllowed = true;
-        potionCrafted.GetComponent<PotionHandler>().DestroyPotion();
-        potionCrafted = null;
+        if (potionCrafted != null)
+        {
+            potionCrafted.GetComponent<PotionHandler>().DestroyPotion();
+            potionCrafted = null;
+        }
     }
 
     GameObject GetChildWithName(GameObject obj, string name)
