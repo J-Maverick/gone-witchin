@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//[ExecuteInEditMode]
 public class ReagentHandler : MonoBehaviour
 {
     [Tooltip("Name of reagent.")]
