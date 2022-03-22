@@ -69,12 +69,11 @@ public class RecipeList : MonoBehaviour
             // If potion is craftable, save it
             if (potionCraftable)
             {
-                if (ListContainsAllItems(potionRecords, recordNames) && nPotionsCraftable == 1)
+                if (ListContainsAllItems(recordNames, potionRecords) && nPotionsCraftable == 1)
                 { 
                     Debug.Log(string.Format("Craftable Potion: {0} || Ignoring", potion.GetComponent<PotionHandler>().potionName));
-                    potionToCraft = potion;
                 }
-                else if (ListContainsAllItems(recordNames, potionRecords) && nPotionsCraftable == 1)
+                else if (ListContainsAllItems(potionRecords, recordNames) && nPotionsCraftable == 1)
                 {
                     Debug.Log(string.Format("Craftable Potion: {0} || Overriding", potion.GetComponent<PotionHandler>().potionName));
                     potionToCraft = potion;
