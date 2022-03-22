@@ -90,7 +90,7 @@ public class CauldronHandler : MonoBehaviour
         smokeColor = startingSmokeColor;
         foreach (Reagent reagent in reagents)
         {
-            smokeColor = Color.Lerp(smokeColor, reagent.reagentColor, reagent.fillLevel * 0.1F);
+            smokeColor = Color.Lerp(smokeColor, reagent.reagentColor, reagent.fillLevel * 0.2F);
         }
         smoke.GetComponent<ParticleSystem>().startColor = smokeColor;
     }
@@ -288,7 +288,7 @@ public class Reagent
     public Reagent(ReagentHandler reagentHandler)
     {
         reagentName = reagentHandler.reagentName;
-        reagentColor = reagentHandler.bottleColor;
+        reagentColor = reagentHandler.pourColor;
     }
 
     public void AddFill(float fill)
