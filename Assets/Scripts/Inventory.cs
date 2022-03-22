@@ -2,34 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Item
-{
-    public GameObject itemPrefab = null;
-    public int nItems;
-    public enum ItemType { Potion, Reagent };
-    public ItemType itemType;
-}
-
 public class Inventory : MonoBehaviour
 {
-    public Item[] items;
-    public enum ItemType { Potion, Reagent };
+    public List<Item> itemList;
+    public int currentValue;
 
-    public void AddItem(GameObject itemToAdd, int numberOfItems)
+    // Method used for adding items to inventory
+    public void AddItem(Item newItem)
     {
-
-        if (itemToAdd.GetComponent<ReagentHandler>() != null)
+        currentValue = currentValue + newItem.shopValue * newItem.nItems;
+        bool isInInventory = false;
+        foreach (Item ownedItem in itemList)
         {
-            ItemType newItemType = ItemType.Reagent;
+            if (newItem.itemID == ownedItem.itemID)
+            {
+                ownedItem.nItems += newItem.nItems;
+                isInInventory = true;
+                break;
+            }
         }
-        if (itemToAdd.GetComponent<PotionHandler>() != null)
+        
+        if (!isInInventory)
         {
-            ItemType newItemType = ItemType.Potion;
-        }
-
-        foreach (Item heldItem in items)
-        {
+            itemList.Add(newItem);
         }
     }
 

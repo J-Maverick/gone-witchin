@@ -20,11 +20,13 @@ public class DraggableItemHandler : MonoBehaviour
 
     public void EnableDrag()
     {
+        dragEnabled = true;
+
         if (GetComponent<LookAtConstraint>() != null)
         {
             GetComponent<LookAtConstraint>().weight = 1.0F;
         }
-        dragEnabled = true;
+
         if (GetComponentInChildren<Animator>() != null)
         {
             GetComponentInChildren<Animator>().SetBool("Uncorked", true);
@@ -46,6 +48,7 @@ public class DraggableItemHandler : MonoBehaviour
         }
 
         dragEnabled = false;
+
         transform.position = homePosition;
         transform.eulerAngles = homeRotation;
 

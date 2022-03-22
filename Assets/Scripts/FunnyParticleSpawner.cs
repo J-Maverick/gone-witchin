@@ -6,6 +6,7 @@ public class FunnyParticleSpawner : MonoBehaviour
 {
     public GameObject funnyPicture;
     public ParticleSystem particleSystem;
+
     private void OnParticleTrigger()
     {
         List<ParticleSystem.Particle> enter = new List<ParticleSystem.Particle>();

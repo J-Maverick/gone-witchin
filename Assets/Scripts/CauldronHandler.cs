@@ -180,7 +180,7 @@ public class CauldronHandler : MonoBehaviour
     // Add reagent to the cauldron, preserving hard max
     public void AddReagentFill(Reagent reagent, ReagentHandler reagentHandler)
     {
-        float fillAmount = reagentHandler.flowRate * Time.deltaTime;
+        float fillAmount = reagentHandler.flowRate * 0.02f;
         fillLevel += fillAmount;
         if (fillLevel > maxFill)
         {
