@@ -6,7 +6,7 @@ using TMPro;
 
 public class DragAndDrop : MonoBehaviour
 {
-    public GameObject fitch;
+    public Animator fitchAnimator;
     public GameObject tooltip;
     [SerializeField]
     private InputAction mouseClick;
@@ -53,7 +53,7 @@ public class DragAndDrop : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Draggable") && !mouseIsPressed)
                 {
                     string tooltipText = "";
-                    tooltip.gameObject.SetActive(true);
+                    tooltip.SetActive(true);
                     if (hit.collider.gameObject.GetComponent<DraggableItemHandler>() != null)
                     {
                         tooltipText = hit.collider.gameObject.GetComponent<DraggableItemHandler>().GetTooltipText();
@@ -71,17 +71,17 @@ public class DragAndDrop : MonoBehaviour
                 }
                 else
                 {
-                    tooltip.gameObject.SetActive(false);
+                    tooltip.SetActive(false);
                 }
             }
             else
             {
-                tooltip.gameObject.SetActive(false);
+                tooltip.SetActive(false);
             }
         }
         else
         {
-            tooltip.gameObject.SetActive(false);
+            tooltip.SetActive(false);
         }
     }
     // Fire a ray from the camera towards the mouse press
@@ -111,7 +111,7 @@ public class DragAndDrop : MonoBehaviour
             clickedObject.GetComponent<DraggableItemHandler>().EnableDrag();
             Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
             clickedObject.transform.position = Vector3.SmoothDamp(clickedObject.transform.position, ray.GetPoint(initialDistance), ref velocity, mouseDragSpeed);
-            fitch.GetComponent<Animator>().SetBool("isPouring", true);
+            fitchAnimator.SetBool("isPouring", true);
             mouseIsPressed = true;
             if (!draggingAllowed)
             {
@@ -121,7 +121,7 @@ public class DragAndDrop : MonoBehaviour
         }
 
         clickedObject.GetComponent<DraggableItemHandler>().DisableDrag();
-        fitch.GetComponent<Animator>().SetBool("isPouring", false);
+        fitchAnimator.SetBool("isPouring", false);
         mouseIsPressed = false;
     }
 }

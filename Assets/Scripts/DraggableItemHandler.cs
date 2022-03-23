@@ -58,13 +58,13 @@ public class DraggableItemHandler : MonoBehaviour
     {
         if (dragEnabled)
         {
-            transform.LookAt(targetObject.GetComponent<Transform>());
+            transform.LookAt(targetObject.transform);
         }
     }
 
     public string GetTooltipText()
     {
-        if (GetComponent<LookAtConstraint>() != null)
+        if (GetComponent<PaddleScaler>() != null)
         {
             return "Trusty stirring oar. Mix ingredients in the cauldron and see what happens.";
         }

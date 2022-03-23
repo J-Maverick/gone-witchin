@@ -13,9 +13,9 @@ public class DebugSpawnButton : MonoBehaviour
     {
         string potionName = debugDropdown.options[debugDropdown.value].text;
         Debug.Log(string.Format("Spawning {0}", potionName));
-        foreach (GameObject potion in recipeList.potions)
+        foreach (PotionHandler potion in recipeList.potions)
         {
-            if (potion.GetComponent<PotionHandler>().potionName == potionName)
+            if (potion.potionName == potionName)
             {
                 cauldron.Reset();
                 cauldron.SetPotionCrafted(potion);

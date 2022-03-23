@@ -8,8 +8,8 @@ public class Credits : MonoBehaviour
     public GameObject credits;
     public GameObject startButton;
     public GameObject quitButton;
-    public GameObject musicController;
     public GameObject title;
+    public Animator musicController;
 
     public void toggleCredits()
     {
@@ -19,7 +19,7 @@ public class Credits : MonoBehaviour
             startButton.SetActive(true);
             quitButton.SetActive(true);
             title.SetActive(true);
-            musicController.GetComponent<Animator>().SetBool("Credits", false);
+            musicController.SetBool("Credits", false);
         }
         else if (!credits.activeSelf)
         {
@@ -27,7 +27,7 @@ public class Credits : MonoBehaviour
             startButton.SetActive(false);
             quitButton.SetActive(false);
             title.SetActive(false);
-            musicController.GetComponent<Animator>().SetBool("Credits", true);
+            musicController.SetBool("Credits", true);
         }
     }
 }

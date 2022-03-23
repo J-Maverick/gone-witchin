@@ -685,11 +685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b84629a1c510f40bea37dd18b9439c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &524153732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2070004553510489578, guid: 11492e3500d3b6b49bb0fb5e12060606, type: 3}
-  m_PrefabInstance: {fileID: 1420733919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550226479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2052,7 +2047,7 @@ GameObject:
   - component: {fileID: 1379052560}
   - component: {fileID: 1379052559}
   m_Layer: 5
-  m_Name: MainMenu
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2272,6 +2267,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11492e3500d3b6b49bb0fb5e12060606, type: 3}
+--- !u!95 &1420733920 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2070004553510489576, guid: 11492e3500d3b6b49bb0fb5e12060606, type: 3}
+  m_PrefabInstance: {fileID: 1420733919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1526702087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,8 +2381,8 @@ MonoBehaviour:
   credits: {fileID: 951555368}
   startButton: {fileID: 462031986}
   quitButton: {fileID: 1773720979}
-  musicController: {fileID: 524153732}
   title: {fileID: 1413248462}
+  musicController: {fileID: 1420733920}
 --- !u!1 &1635756498
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,10 +20,10 @@ public class DebugController : MonoBehaviour
         debug = false;
         List<string> potions = new List<string>();
         debugPotionList.ClearOptions();
-        foreach (GameObject potion in recipeList.potions)
+        foreach (PotionHandler potion in recipeList.potions)
         {
 
-            potions.Add(potion.GetComponent<PotionHandler>().potionName);
+            potions.Add(potion.potionName);
         }
         debugPotionList.AddOptions(potions);
     }

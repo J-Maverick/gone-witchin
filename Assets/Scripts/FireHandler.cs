@@ -18,7 +18,7 @@ public class FireHandler : MonoBehaviour
     public float minFireSpeed = 0.8F;
 
     public PlayerActions controls;
-    public GameObject fitch;
+    public Animator fitchAnimator;
 
     int jump = 0;
 
@@ -27,47 +27,47 @@ public class FireHandler : MonoBehaviour
         particleSystem = GetComponent<ParticleSystem>();
     }
 
-    private void Awake()
-    {
-        controls = new PlayerActions();
-    }
+    //private void Awake()
+    //{
+    //    controls = new PlayerActions();
+    //}
 
-    private void OnEnable()
-    {
-        controls.Enable();
-    }
+    //private void OnEnable()
+    //{
+    //    controls.Enable();
+    //}
 
-    private void OnDisable()
-    {
-        controls.Disable();
-    }
+    //private void OnDisable()
+    //{
+    //    controls.Disable();
+    //}
 
     // Update is called once per frame
-    void Update()
-    {
-        controls.Cauldron.FanFlame.performed += ctx => FanFlame();
+    //void Update()
+    //{
+    //    controls.Cauldron.FanFlame.performed += ctx => FanFlame();
 
-        particleSystem.startSpeed = GetParticleSpeed();
-        Debug.Log(string.Format("heatingRate: {0} || decayRate: {1}", heatingRate, decayRate));
-        cauldron.AddHeat(this);
-        DecayHeat();
+    //    particleSystem.startSpeed = GetParticleSpeed();
+    //    Debug.Log(string.Format("heatingRate: {0} || decayRate: {1}", heatingRate, decayRate));
+    //    cauldron.AddHeat(this);
+    //    DecayHeat();
 
-        if (jump > 0)
-        {
-            jump -= 1;
-        }
-        else
-        {
-            jump = 0;
-            fitch.GetComponent<Animator>().SetBool("fanFlame", false);
-        }
-    }
+    //    if (jump > 0)
+    //    {
+    //        jump -= 1;
+    //    }
+    //    else
+    //    {
+    //        jump = 0;
+    //        fitchAnimator.SetBool("fanFlame", false);
+    //    }
+    //}
 
     // Set heating rate to maximum
     public void FanFlame()
     {
         heatingRate = maxRate;
-        fitch.GetComponent<Animator>().SetBool("fanFlame", true);
+        fitchAnimator.SetBool("fanFlame", true);
         jump = 5;
     }
 

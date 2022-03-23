@@ -5,35 +5,35 @@ using UnityEngine;
 //[ExecuteInEditMode]
 public class RecipeList : MonoBehaviour
 {
-    public GameObject[] potions;
+    public PotionHandler[] potions;
     public float partSize = 0.1F;
     public string recipeStrings;
 
     private void Start()
     {
         recipeStrings = "";
-        foreach (GameObject potion in potions)
+        foreach (PotionHandler potion in potions)
         {
-            recipeStrings += string.Format("{0}\n", potion.GetComponent<PotionHandler>().GetCraftingRecipeString());
+            recipeStrings += string.Format("{0}\n", potion.GetCraftingRecipeString());
         }
     }
 
     // Checks if cauldron ingredients can make a unique potion type, returns potion game object or null if no potion (or multiple unique potions) can be made
-    public GameObject CheckRecipes(List<Reagent> cauldronReagents)
+    public PotionHandler CheckRecipes(List<Reagent> cauldronReagents)
     {
         Debug.Log("Checking Recipe...");
         int nPotionsCraftable = 0;
-        GameObject potionToCraft = null;
+        PotionHandler potionToCraft = null;
 
         List<string> potionRecords = new List<string>();
 
         // Loop through recipes
-        foreach (GameObject potion in potions)
+        foreach (PotionHandler potion in potions)
         {
             bool potionCraftable = true;
             List<string> recordNames = new List<string>();
             // Loop through reagents in recipe
-            foreach (ReagentRecord reagentRecord in potion.GetComponent<PotionHandler>().reagents)
+            foreach (ReagentRecord reagentRecord in potion.reagents)
             {
                 bool enoughReagents = false;
                 string recordName = reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().reagentName;
@@ -43,7 +43,7 @@ public class RecipeList : MonoBehaviour
 
                     if (recordName == reagent.reagentName && reagent.fillLevel > 0.01)
                     {
-                        Debug.Log(string.Format("Checking for {0} in {1}", reagent.reagentName, potion.GetComponent<PotionHandler>().potionName));
+                        Debug.Log(string.Format("Checking for {0} in {1}", reagent.reagentName, potion.potionName));
 
                         // Check if reagent has sufficient fill level to produce potion
                         if (reagentRecord.numParts * partSize < reagent.fillLevel)
@@ -54,14 +54,14 @@ public class RecipeList : MonoBehaviour
                         else
                         {
                             Debug.Log(string.Format("Couldn't Craft {0} || reagentRecord.numParts: {1} || partSize: {2} || reagentMin: {3} || reagent.fillLevel: {4} || reagentName: {5}",
-                            potion.GetComponent<PotionHandler>().potionName, reagentRecord.numParts, partSize, reagentRecord.numParts * partSize, reagent.fillLevel, reagent.reagentName));
+                            potion.potionName, reagentRecord.numParts, partSize, reagentRecord.numParts * partSize, reagent.fillLevel, reagent.reagentName));
                         }
                     }
                 }
                 if (!enoughReagents)
                 {
                     Debug.Log(string.Format("Couldn't Craft {0}, not enough {1}",
-                        potion.GetComponent<PotionHandler>().potionName, reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().reagentName));
+                        potion.potionName, reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().reagentName));
                     potionCraftable = false;
                     break;
                 }
@@ -69,20 +69,22 @@ public class RecipeList : MonoBehaviour
             // If potion is craftable, save it
             if (potionCraftable)
             {
-                if (ListContainsAllItems(recordNames, potionRecords) && nPotionsCraftable == 1)
+                if (ListContainsAllItems(potionRecords, recordNames) && nPotionsCraftable == 1)
                 { 
-                    Debug.Log(string.Format("Craftable Potion: {0} || Ignoring", potion.GetComponent<PotionHandler>().potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0} || Ignoring", potion.potionName));
                 }
-                else if (ListContainsAllItems(potionRecords, recordNames) && nPotionsCraftable == 1)
+                else if (ListContainsAllItems(recordNames, potionRecords) && nPotionsCraftable == 1)
                 {
-                    Debug.Log(string.Format("Craftable Potion: {0} || Overriding", potion.GetComponent<PotionHandler>().potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0} || Overriding", potion.potionName));
                     potionToCraft = potion;
+                    potionRecords = recordNames;
                 }
                 else
                 {
-                    Debug.Log(string.Format("Craftable Potion: {0}", potion.GetComponent<PotionHandler>().potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0}", potion.potionName));
                     nPotionsCraftable += 1;
                     potionToCraft = potion;
+                    potionRecords = recordNames;
                 }
             }
             // If more than one type of potion can be made from the cauldron ingredients, fail

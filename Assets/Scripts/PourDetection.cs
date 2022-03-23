@@ -86,10 +86,11 @@ public class PourDetection : MonoBehaviour
         for (int i = 0; i < numEnter; i++)
         {
             ParticleSystem.Particle p = enter[i];
-            Debug.Log(string.Format("Setting flowRate of {0} to {1}", transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>().reagentName, p.startSize));
-            transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>().flowRate = p.startSize * 0.2F;
-            transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>().cauldron.AddReagent(transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>());
-            transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>().flowRate = 0F;
+            reagentHandler = transform.parent.parent.gameObject.GetComponentInParent<ReagentHandler>();
+            Debug.Log(string.Format("Setting flowRate of {0} to {1}", reagentHandler.reagentName, p.startSize));
+            reagentHandler.flowRate = p.startSize * 0.2F;
+            reagentHandler.cauldron.AddReagent(reagentHandler);
+            reagentHandler.flowRate = 0F;
         }
         
     }

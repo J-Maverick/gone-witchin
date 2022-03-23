@@ -15,9 +15,9 @@ public class CauldronHandler : MonoBehaviour
     public GameObject radiusBone;
     public RecipeList recipeList;
 
-    public GameObject fitch;
-    public GameObject player;
-    public GameObject musicController;
+    public Animator fitchAnimator;
+    public DragAndDrop playerDragAndDrop;
+    public Animator musicController;
 
     public GameObject potionTarget;
 
@@ -25,19 +25,19 @@ public class CauldronHandler : MonoBehaviour
     Transform[] transforms;
     Animator animator;
     List<Reagent> reagents = new List<Reagent>();
-    GameObject smoke;
+    ParticleSystem smoke;
     Color startingSmokeColor;
     Color smokeColor;
-    GameObject potionCrafted = null;
+    PotionHandler potionCrafted = null;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         materials = GetComponentInChildren<SkinnedMeshRenderer>().materials;
-        smoke = GetChildWithName(this.gameObject, "Smoke");
-        startingSmokeColor = smoke.GetComponent<ParticleSystem>().startColor;
+        smoke = transform.Find("Smoke").GetComponent<ParticleSystem>();
+        startingSmokeColor = smoke.main.startColor.color;
 
-        musicController.GetComponent<Animator>().SetBool("isCooking", true);
+        musicController.SetBool("isCooking", true);
 
         materials[2].EnableKeyword("_EMISSION");
         materials[3].EnableKeyword("_EMISSION");
@@ -92,7 +92,8 @@ public class CauldronHandler : MonoBehaviour
         {
             smokeColor = Color.Lerp(smokeColor, reagent.reagentColor, reagent.fillLevel * 0.2F);
         }
-        smoke.GetComponent<ParticleSystem>().startColor = smokeColor;
+        var smokeMain = smoke.main;
+        smokeMain.startColor = smokeColor;
     }
 
     // Makes the gems around the rim glow based on fill level
@@ -131,12 +132,12 @@ public class CauldronHandler : MonoBehaviour
     // Retrieve radius of lip bone
     private float GetLipRadius()
     {
-        return radiusBone.GetComponent<Transform>().localPosition.y;
+        return radiusBone.transform.localPosition.y;
     }
 
     private float GetLipRotation()
     {
-        return rotationBone.GetComponent<Transform>().localEulerAngles.y;
+        return rotationBone.transform.localEulerAngles.y;
     }
 
     // Convert linear fill value to equivalent rotation and return 0-1 value for rotation animation application
@@ -209,7 +210,7 @@ public class CauldronHandler : MonoBehaviour
     public void CheckSuccess()
     {
         Debug.Log(reagents);
-        potionCrafted = recipeList.GetComponent<RecipeList>().CheckRecipes(reagents);
+        potionCrafted = recipeList.CheckRecipes(reagents);
         Debug.Log(string.Format("Checking Success: potionCrafted: {0}", potionCrafted));
         if (potionCrafted == null)
         {
@@ -223,57 +224,43 @@ public class CauldronHandler : MonoBehaviour
         }
     }
 
-    public void SetPotionCrafted(GameObject potionToSet)
+    public void SetPotionCrafted(PotionHandler potionToSet)
     {
         potionCrafted = potionToSet;
     }
 
     public void TriggerFailure()
     {
-        fitch.GetComponent<Animator>().SetBool("onFire", true);
-        musicController.GetComponent<Animator>().SetBool("onFire", true);
-        player.GetComponent<DragAndDrop>().draggingAllowed = false;
+        fitchAnimator.SetBool("onFire", true);
+        musicController.SetBool("onFire", true);
+        playerDragAndDrop.draggingAllowed = false;
     }
 
     public void TriggerSuccess()
     {
-        fitch.GetComponent<Animator>().SetBool("isVictory", true);
-        musicController.GetComponent<Animator>().SetBool("isVictory", true);
+        fitchAnimator.SetBool("isVictory", true);
+        musicController.SetBool("isVictory", true);
         potionTarget.transform.parent.parent.GetComponent<Animator>().SetBool("isVictory", true);
-        potionCrafted.GetComponent<PotionHandler>().SpawnPotion(potionTarget);
-        player.GetComponent<DragAndDrop>().draggingAllowed = false;
+        potionCrafted.SpawnPotion(potionTarget);
+        playerDragAndDrop.draggingAllowed = false;
     }
 
     public void Reset()
     {
         temperature = 0.3F;
         fillLevel = 0.0F;
-        fitch.GetComponent<Animator>().SetBool("isVictory", false);
-        fitch.GetComponent<Animator>().SetBool("onFire", false);
-        musicController.GetComponent<Animator>().SetBool("isVictory", false);
+        fitchAnimator.SetBool("isVictory", false);
+        fitchAnimator.SetBool("onFire", false);
+        musicController.SetBool("isVictory", false);
         potionTarget.transform.parent.parent.GetComponent<Animator>().SetBool("isVictory", false);
-        musicController.GetComponent<Animator>().SetBool("onFire", false);
+        musicController.SetBool("onFire", false);
 
         reagents = new List<Reagent>();
-        player.GetComponent<DragAndDrop>().draggingAllowed = true;
+        playerDragAndDrop.draggingAllowed = true;
         if (potionCrafted != null)
         {
-            potionCrafted.GetComponent<PotionHandler>().DestroyPotion();
+            potionCrafted.DestroyPotion();
             potionCrafted = null;
-        }
-    }
-
-    GameObject GetChildWithName(GameObject obj, string name)
-    {
-        Transform childTrans = obj.transform.Find(name);
-
-        if (childTrans != null)
-        {
-            return childTrans.gameObject;
-        }
-        else
-        {
-            return null;
         }
     }
 }

@@ -108,7 +108,8 @@ public class ReagentHandler : MonoBehaviour
             Destroy(reagentBottle.GetComponentInChildren<BoxCollider>());
             reagentPour = Instantiate(pourStream) as GameObject;
             reagentPour.transform.SetParent(reagentBottle.transform.Find("Origin"), false);
-            reagentPour.GetComponent<ParticleSystem>().startColor = pourColor;
+            var reagentPourParticle = reagentPour.GetComponent<ParticleSystem>().main;
+            reagentPourParticle.startColor = pourColor;
 
             reagentBottle.transform.SetParent(target.GetComponent<Transform>(), false);
             SetBottleMaterialProperties();
@@ -252,7 +253,7 @@ public class ReagentHandler : MonoBehaviour
             DestroyReagent();
             lastBottleType = bottleType;
             reagentBottle = Instantiate(GetBottle()) as GameObject;
-            reagentBottle.transform.SetParent(GetComponent<Transform>(), false);
+            reagentBottle.transform.SetParent(transform, false);
             SetBottleMaterialProperties();
         }
         if (!createMode && lastCreateMode)
