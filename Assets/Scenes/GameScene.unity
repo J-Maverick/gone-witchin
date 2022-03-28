@@ -3634,6 +3634,14 @@ PrefabInstance:
       propertyPath: itemName
       value: Lesser Joltbrew
       objectReference: {fileID: 0}
+    - target: {fileID: 895410140786621798, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1078328680}
+    - target: {fileID: 895410140786621798, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 1056512121232663498, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 500
@@ -3646,14 +3654,46 @@ PrefabInstance:
       propertyPath: itemName
       value: Melatonic
       objectReference: {fileID: 0}
+    - target: {fileID: 1505277889968408668, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 824998257}
+    - target: {fileID: 1505277889968408668, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 1505277889968408668, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 1600012040655322962, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Unlimited Power
       objectReference: {fileID: 0}
+    - target: {fileID: 1600012040655322962, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1078328680}
+    - target: {fileID: 1600012040655322962, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 1600012040655322962, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 2009475936}
     - target: {fileID: 1819897396885460137, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Spicy Ice
       objectReference: {fileID: 0}
+    - target: {fileID: 1819897396885460137, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1259522556}
+    - target: {fileID: 1819897396885460137, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1595381075}
     - target: {fileID: 1983740538758861052, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Name
       value: FunctionalItems
@@ -3662,6 +3702,14 @@ PrefabInstance:
       propertyPath: itemName
       value: Health Flask
       objectReference: {fileID: 0}
+    - target: {fileID: 2039036215804127333, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 403044886}
+    - target: {fileID: 2039036215804127333, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 2186791453514847647, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3691,10 +3739,26 @@ PrefabInstance:
       propertyPath: itemName
       value: Vitamins
       objectReference: {fileID: 0}
+    - target: {fileID: 2373966432805385022, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
+    - target: {fileID: 2373966432805385022, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 2393881319880756468, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Tasha's Brew
       objectReference: {fileID: 0}
+    - target: {fileID: 2393881319880756468, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 2009475936}
+    - target: {fileID: 2393881319880756468, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 2448904431529641174, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00000020116568
@@ -3723,6 +3787,14 @@ PrefabInstance:
       propertyPath: itemName
       value: Reanimation Juice
       objectReference: {fileID: 0}
+    - target: {fileID: 2645159988826396401, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1078328680}
+    - target: {fileID: 2645159988826396401, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 403044886}
     - target: {fileID: 2657467241475471675, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: fitch
       value: 
@@ -3819,10 +3891,30 @@ PrefabInstance:
       propertyPath: itemName
       value: High Spirits
       objectReference: {fileID: 0}
+    - target: {fileID: 3239287058478131029, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
+    - target: {fileID: 3239287058478131029, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
+    - target: {fileID: 3239287058478131029, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 559920463}
     - target: {fileID: 3278007495078967891, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Decaf Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 3278007495078967891, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 225957555}
+    - target: {fileID: 3278007495078967891, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
     - target: {fileID: 3494052232440352116, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.09
@@ -3887,14 +3979,42 @@ PrefabInstance:
       propertyPath: itemName
       value: Frigelic
       objectReference: {fileID: 0}
+    - target: {fileID: 3512795177156159469, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1595381075}
+    - target: {fileID: 3512795177156159469, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 3585836682780537640, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Dreadbull
       objectReference: {fileID: 0}
+    - target: {fileID: 3585836682780537640, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 225957555}
+    - target: {fileID: 3585836682780537640, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 403044886}
+    - target: {fileID: 3585836682780537640, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 3633631471120981997, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Greater Flame Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 3633631471120981997, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1259522556}
+    - target: {fileID: 3633631471120981997, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 2009475936}
     - target: {fileID: 3977774669768270296, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.149
@@ -4007,18 +4127,54 @@ PrefabInstance:
       propertyPath: itemName
       value: Bottled Dread
       objectReference: {fileID: 0}
+    - target: {fileID: 4384557865399807601, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 4384557865399807601, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 4510956210490339451, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Lesser Poison Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 4510956210490339451, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 559920463}
+    - target: {fileID: 4510956210490339451, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 5161564209243601564, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Necronic
       objectReference: {fileID: 0}
+    - target: {fileID: 5161564209243601564, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 824998257}
+    - target: {fileID: 5161564209243601564, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1751763527}
     - target: {fileID: 5291941359528990349, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Greater Poison Potion
       objectReference: {fileID: 0}
+    - target: {fileID: 5291941359528990349, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 559920463}
+    - target: {fileID: 5291941359528990349, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
+    - target: {fileID: 5291941359528990349, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 5429621479415474456, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -4124,10 +4280,30 @@ PrefabInstance:
       propertyPath: itemName
       value: Melanchronic
       objectReference: {fileID: 0}
+    - target: {fileID: 6426502887197761413, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 6426502887197761413, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 559920463}
     - target: {fileID: 6548652558876276823, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Darkflame Spit
       objectReference: {fileID: 0}
+    - target: {fileID: 6548652558876276823, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1259522556}
+    - target: {fileID: 6548652558876276823, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 6548652558876276823, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 6986327134791566272, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -4168,14 +4344,42 @@ PrefabInstance:
       propertyPath: itemName
       value: Manabucha
       objectReference: {fileID: 0}
+    - target: {fileID: 7114443973968602826, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 824998257}
+    - target: {fileID: 7114443973968602826, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1078328680}
+    - target: {fileID: 7114443973968602826, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
     - target: {fileID: 7136433461747906628, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Demonic Strength
       objectReference: {fileID: 0}
+    - target: {fileID: 7136433461747906628, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 403044886}
+    - target: {fileID: 7136433461747906628, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1259522556}
     - target: {fileID: 7268375013144243309, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Muddy Buddy
       objectReference: {fileID: 0}
+    - target: {fileID: 7268375013144243309, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 926321035}
+    - target: {fileID: 7268375013144243309, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1751763527}
     - target: {fileID: 7464989129029540636, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.098
@@ -4236,6 +4440,18 @@ PrefabInstance:
       propertyPath: itemName
       value: Heavy Lager
       objectReference: {fileID: 0}
+    - target: {fileID: 7666655057447045181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 2009475936}
+    - target: {fileID: 7666655057447045181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 403044886}
+    - target: {fileID: 7666655057447045181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[2].reagentPrefab
+      value: 
+      objectReference: {fileID: 1751763527}
     - target: {fileID: 7902692110345031800, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.768
@@ -4496,6 +4712,14 @@ PrefabInstance:
       propertyPath: itemName
       value: Fertilizer
       objectReference: {fileID: 0}
+    - target: {fileID: 8032293776960960383, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1751763527}
+    - target: {fileID: 8032293776960960383, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 8588945606749874817, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.92
@@ -4572,6 +4796,14 @@ PrefabInstance:
       propertyPath: itemName
       value: Paralysis Punch
       objectReference: {fileID: 0}
+    - target: {fileID: 8715161683228679223, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 824998257}
+    - target: {fileID: 8715161683228679223, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     - target: {fileID: 8743323179908800512, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4620,10 +4852,26 @@ PrefabInstance:
       propertyPath: itemName
       value: Thickened Gluttony
       objectReference: {fileID: 0}
+    - target: {fileID: 9106533770028447565, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 544878845}
+    - target: {fileID: 9106533770028447565, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 2009475936}
     - target: {fileID: 9223259944982028286, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: itemName
       value: Lesser Firebrew
       objectReference: {fileID: 0}
+    - target: {fileID: 9223259944982028286, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[0].reagentPrefab
+      value: 
+      objectReference: {fileID: 1259522556}
+    - target: {fileID: 9223259944982028286, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: reagents.Array.data[1].reagentPrefab
+      value: 
+      objectReference: {fileID: 1457182118}
     m_RemovedComponents:
     - {fileID: 6264992111049364470, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
