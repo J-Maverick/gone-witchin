@@ -44,6 +44,8 @@ public class CauldronHandler : MonoBehaviour
         materials[4].EnableKeyword("_EMISSION");
         materials[6].EnableKeyword("_EMISSION");
         materials[5].EnableKeyword("_EMISSION");
+
+        StartCoroutine(debugLogReagents());
     }
 
     // Update is called once per frame
@@ -61,12 +63,21 @@ public class CauldronHandler : MonoBehaviour
 
         SetSmokeColor();
 
-        Debug.Log(string.Format("radius: {0}, angle: {1}", GetLipRadius(), GetLipRotation()));
-        foreach (Reagent reagent in reagents)
-        {
-            Debug.Log(string.Format("Amount of {0}: {1}", reagent.reagentName, reagent.fillLevel));
+        // Debug.Log(string.Format("radius: {0}, angle: {1}", GetLipRadius(), GetLipRotation()));
+
+
+    }
+
+    IEnumerator debugLogReagents()
+    {
+        while (true)
+        { 
+            foreach (Reagent reagent in reagents)
+            {
+                Debug.Log(string.Format("Amount of {0}: {1}", reagent.name, reagent.fillLevel));
+            }
+            yield return new WaitForSeconds(0.1f);
         }
-        
     }
 
     // Set color based on temperate value from 0-1
@@ -163,7 +174,7 @@ public class CauldronHandler : MonoBehaviour
         {
             if (reagent.IsMatch(reagentHandler))
             {
-                Debug.Log(string.Format("Adding {0} to the {1} levels", reagentHandler.reagentName, reagent.reagentName));
+                Debug.Log(string.Format("Adding {0} to the {1} levels", reagentHandler.itemName, reagent.name));
                 AddReagentFill(reagent, reagentHandler);
                 matchedReagent = true;
                 break;
@@ -210,6 +221,10 @@ public class CauldronHandler : MonoBehaviour
     public void CheckSuccess()
     {
         Debug.Log(reagents);
+        foreach (Reagent reagent in reagents)
+        {
+            Debug.LogFormat("Reagent {0} present in cauldron reagent list", reagent.name);
+        }
         potionCrafted = recipeList.CheckRecipes(reagents);
         Debug.Log(string.Format("Checking Success: potionCrafted: {0}", potionCrafted));
         if (potionCrafted == null)
@@ -268,13 +283,13 @@ public class CauldronHandler : MonoBehaviour
 // Class used for storing reagents currently in the cauldron
 public class Reagent
 {
-    public string reagentName { get; }
+    public string name { get; }
     public float fillLevel = 0F;
     public Color reagentColor;
 
     public Reagent(ReagentHandler reagentHandler)
     {
-        reagentName = reagentHandler.reagentName;
+        name = reagentHandler.itemName;
         reagentColor = reagentHandler.pourColor;
     }
 
@@ -285,7 +300,7 @@ public class Reagent
 
     public bool IsMatch(ReagentHandler reagentHandler)
     {
-        if (reagentHandler.reagentName == reagentName)
+        if (reagentHandler.itemName == name)
         {
             return true;
         }

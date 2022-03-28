@@ -42,14 +42,14 @@ public class DragAndDrop : MonoBehaviour
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
         RaycastHit hit;
 
-        Debug.Log("Ray shoot");
+        //Debug.Log("Ray shoot");
         // Check if ray hits anything, output value to hit
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("Ray SHOOTMA");
+            //Debug.Log("Ray SHOOTMA");
             if (hit.collider != null)
             {
-                Debug.Log("Ray Hit");
+                //Debug.Log("Ray Hit");
                 if (hit.collider.gameObject.CompareTag("Draggable") && !mouseIsPressed)
                 {
                     string tooltipText = "";

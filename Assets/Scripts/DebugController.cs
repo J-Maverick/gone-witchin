@@ -23,7 +23,7 @@ public class DebugController : MonoBehaviour
         foreach (PotionHandler potion in recipeList.potions)
         {
 
-            potions.Add(potion.potionName);
+            potions.Add(potion.itemName);
         }
         debugPotionList.AddOptions(potions);
     }

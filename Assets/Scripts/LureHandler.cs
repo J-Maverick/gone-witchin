@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class LureHandler : MonoBehaviour
+public class LureHandler : MonoBehaviour, IPointerClickHandler
 {
     public float lureRadius;
     public List<FishSwimHandler> fishies;
@@ -11,6 +12,16 @@ public class LureHandler : MonoBehaviour
     void Start()
     {
         
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log("Clicked Lure");
+    }
+
+    public string MandatoryInterfaceMethod()
+    {
+        return "hello";
     }
 
     // Update is called once per frame

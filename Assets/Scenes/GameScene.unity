@@ -520,7 +520,7 @@ NavMeshAgent:
   m_Speed: 30
   m_Acceleration: 1
   avoidancePriority: 50
-  m_AngularSpeed: 270
+  m_AngularSpeed: 360
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -1879,13 +1879,14 @@ GameObject:
   - component: {fileID: 640082173}
   - component: {fileID: 640082172}
   - component: {fileID: 640082171}
+  - component: {fileID: 640082174}
   m_Layer: 0
   m_Name: FishingCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &640082171
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1951,6 +1952,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 23.582, y: -104.283, z: 0}
+--- !u!114 &640082174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640082170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!114 &690858468 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2393881319880756468, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
@@ -1967,6 +1984,49 @@ Light:
   m_CorrespondingSourceObject: {fileID: 2070004554999725180, guid: 11492e3500d3b6b49bb0fb5e12060606, type: 3}
   m_PrefabInstance: {fileID: 2070004554363031270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &753570033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753570034}
+  - component: {fileID: 753570035}
+  m_Layer: 0
+  m_Name: BottleBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753570034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753570033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1649356082}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753570035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753570033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac7da74458248a241a15cfb44690ddb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &759690565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4314376034137613531, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
@@ -2893,6 +2953,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7942099077857251654, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
   m_PrefabInstance: {fileID: 1649356080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1224582829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224582826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a866c2e5cf5cc145a37f06cf1dd4688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipText: 
+  itemName: 
 --- !u!1 &1259522556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7902692110345031802, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
@@ -3489,6 +3563,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1735588305}
     - target: {fileID: 275316218789886093, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Essence of Life
+      objectReference: {fileID: 0}
+    - target: {fileID: 275316218789886093, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
       objectReference: {fileID: 0}
@@ -3552,6 +3630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 895410140786621798, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Lesser Joltbrew
+      objectReference: {fileID: 0}
     - target: {fileID: 1056512121232663498, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 500
@@ -3560,9 +3642,25 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1505277889968408668, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Melatonic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600012040655322962, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Unlimited Power
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819897396885460137, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Spicy Ice
+      objectReference: {fileID: 0}
     - target: {fileID: 1983740538758861052, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Name
       value: FunctionalItems
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039036215804127333, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Health Flask
       objectReference: {fileID: 0}
     - target: {fileID: 2186791453514847647, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
@@ -3589,6 +3687,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 2373966432805385022, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Vitamins
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393881319880756468, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Tasha's Brew
+      objectReference: {fileID: 0}
     - target: {fileID: 2448904431529641174, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00000020116568
@@ -3612,6 +3718,10 @@ PrefabInstance:
     - target: {fileID: 2448904431884356730, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalScale.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645159988826396401, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Reanimation Juice
       objectReference: {fileID: 0}
     - target: {fileID: 2657467241475471675, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: fitch
@@ -3649,6 +3759,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 2788355261732635992, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Jar of Dirt
+      objectReference: {fileID: 0}
     - target: {fileID: 2788355261732635992, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3701,6 +3815,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.22
       objectReference: {fileID: 0}
+    - target: {fileID: 3239287058478131029, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: High Spirits
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278007495078967891, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Decaf Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 3494052232440352116, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.09
@@ -3725,6 +3847,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 3494052232440352119, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Distilled Chaos
+      objectReference: {fileID: 0}
     - target: {fileID: 3494052232440352119, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3757,6 +3883,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -20.294
       objectReference: {fileID: 0}
+    - target: {fileID: 3512795177156159469, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Frigelic
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585836682780537640, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Dreadbull
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633631471120981997, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Greater Flame Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 3977774669768270296, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.149
@@ -3782,6 +3920,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1735588305}
     - target: {fileID: 3977774669768270299, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Pond Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977774669768270299, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
       objectReference: {fileID: 0}
@@ -3801,6 +3943,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 4270601376258768181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Shock Blast
+      objectReference: {fileID: 0}
     - target: {fileID: 4270601376258768181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3846,6 +3992,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1735588305}
     - target: {fileID: 4358719649269749351, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Element of Awakeness
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358719649269749351, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
       objectReference: {fileID: 0}
@@ -3853,6 +4003,22 @@ PrefabInstance:
       propertyPath: pourStream
       value: 
       objectReference: {fileID: 1093798181}
+    - target: {fileID: 4384557865399807601, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Bottled Dread
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510956210490339451, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Lesser Poison Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161564209243601564, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Necronic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291941359528990349, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Greater Poison Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 5429621479415474456, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3865,6 +4031,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 5429621479415474457, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Mandrake Tears
+      objectReference: {fileID: 0}
     - target: {fileID: 5429621479415474457, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3950,6 +4120,14 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6426502887197761413, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Melanchronic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548652558876276823, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Darkflame Spit
+      objectReference: {fileID: 0}
     - target: {fileID: 6986327134791566272, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3962,6 +4140,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 6986327134791566273, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Fish Oil
+      objectReference: {fileID: 0}
     - target: {fileID: 6986327134791566273, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -3981,6 +4163,18 @@ PrefabInstance:
     - target: {fileID: 6986327134791566274, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.821
+      objectReference: {fileID: 0}
+    - target: {fileID: 7114443973968602826, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Manabucha
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136433461747906628, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Demonic Strength
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268375013144243309, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Muddy Buddy
       objectReference: {fileID: 0}
     - target: {fileID: 7464989129029540636, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4006,6 +4200,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 7464989129029540639, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Mayfly Soup
+      objectReference: {fileID: 0}
     - target: {fileID: 7464989129029540639, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: bottleType
       value: 16
@@ -4034,6 +4232,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -20.63
       objectReference: {fileID: 0}
+    - target: {fileID: 7666655057447045181, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Heavy Lager
+      objectReference: {fileID: 0}
     - target: {fileID: 7902692110345031800, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.768
@@ -4058,6 +4260,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 7902692110345031803, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Apprentice Blaze
+      objectReference: {fileID: 0}
     - target: {fileID: 7902692110345031803, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -4286,6 +4492,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8032293776960960383, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Fertilizer
+      objectReference: {fileID: 0}
     - target: {fileID: 8588945606749874817, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.92
@@ -4302,6 +4512,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 8588945606749874818, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Taste of Void
+      objectReference: {fileID: 0}
     - target: {fileID: 8588945606749874818, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -4322,6 +4536,10 @@ PrefabInstance:
       propertyPath: cauldron
       value: 
       objectReference: {fileID: 1735588305}
+    - target: {fileID: 8711315232274146560, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Winter Breeze
+      objectReference: {fileID: 0}
     - target: {fileID: 8711315232274146560, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: createMode
       value: 0
@@ -4349,6 +4567,10 @@ PrefabInstance:
     - target: {fileID: 8711315232274146563, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 8715161683228679223, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Paralysis Punch
       objectReference: {fileID: 0}
     - target: {fileID: 8743323179908800512, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_RootOrder
@@ -4393,6 +4615,14 @@ PrefabInstance:
     - target: {fileID: 8743323179908800512, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106533770028447565, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Thickened Gluttony
+      objectReference: {fileID: 0}
+    - target: {fileID: 9223259944982028286, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+      propertyPath: itemName
+      value: Lesser Firebrew
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6264992111049364470, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
@@ -4943,6 +5173,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7826979485291205915, guid: 25c095ee96ac56b4c9d419cf521f1314, type: 3}
   m_PrefabInstance: {fileID: 6944108134773054839}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1975839951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7942099077991947141, guid: ca3686bc52454f245b03247a4d561a88, type: 3}
+  m_PrefabInstance: {fileID: 1649356080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975839955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975839951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &2006543268
 GameObject:
   m_ObjectHideFlags: 0

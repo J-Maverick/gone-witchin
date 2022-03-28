@@ -36,14 +36,14 @@ public class RecipeList : MonoBehaviour
             foreach (ReagentRecord reagentRecord in potion.reagents)
             {
                 bool enoughReagents = false;
-                string recordName = reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().reagentName;
+                string recordName = reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().itemName;
                 // Loop through reagents in cauldron
                 foreach (Reagent reagent in cauldronReagents)
                 {
-
-                    if (recordName == reagent.reagentName && reagent.fillLevel > 0.01)
+                    Debug.LogFormat("Checking reagent: {0} against record: {1}", reagent.name, recordName);
+                    if (recordName == reagent.name && reagent.fillLevel > 0.01)
                     {
-                        Debug.Log(string.Format("Checking for {0} in {1}", reagent.reagentName, potion.potionName));
+                        Debug.Log(string.Format("Checking for {0} in {1}", reagent.name, potion.itemName));
 
                         // Check if reagent has sufficient fill level to produce potion
                         if (reagentRecord.numParts * partSize < reagent.fillLevel)
@@ -53,15 +53,15 @@ public class RecipeList : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log(string.Format("Couldn't Craft {0} || reagentRecord.numParts: {1} || partSize: {2} || reagentMin: {3} || reagent.fillLevel: {4} || reagentName: {5}",
-                            potion.potionName, reagentRecord.numParts, partSize, reagentRecord.numParts * partSize, reagent.fillLevel, reagent.reagentName));
+                            Debug.Log(string.Format("Couldn't Craft {0} || reagentRecord.numParts: {1} || partSize: {2} || reagentMin: {3} || reagent.fillLevel: {4} || name: {5}",
+                            potion.itemName, reagentRecord.numParts, partSize, reagentRecord.numParts * partSize, reagent.fillLevel, reagent.name));
                         }
                     }
                 }
                 if (!enoughReagents)
                 {
                     Debug.Log(string.Format("Couldn't Craft {0}, not enough {1}",
-                        potion.potionName, reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().reagentName));
+                        potion.itemName, reagentRecord.reagentPrefab.GetComponent<ReagentHandler>().itemName));
                     potionCraftable = false;
                     break;
                 }
@@ -71,17 +71,17 @@ public class RecipeList : MonoBehaviour
             {
                 if (ListContainsAllItems(potionRecords, recordNames) && nPotionsCraftable == 1)
                 { 
-                    Debug.Log(string.Format("Craftable Potion: {0} || Ignoring", potion.potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0} || Ignoring", potion.itemName));
                 }
                 else if (ListContainsAllItems(recordNames, potionRecords) && nPotionsCraftable == 1)
                 {
-                    Debug.Log(string.Format("Craftable Potion: {0} || Overriding", potion.potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0} || Overriding", potion.itemName));
                     potionToCraft = potion;
                     potionRecords = recordNames;
                 }
                 else
                 {
-                    Debug.Log(string.Format("Craftable Potion: {0}", potion.potionName));
+                    Debug.Log(string.Format("Craftable Potion: {0}", potion.itemName));
                     nPotionsCraftable += 1;
                     potionToCraft = potion;
                     potionRecords = recordNames;

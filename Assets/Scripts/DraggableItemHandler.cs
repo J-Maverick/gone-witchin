@@ -70,7 +70,7 @@ public class DraggableItemHandler : MonoBehaviour
         }
         else if (GetComponent<ReagentHandler>() != null)
         {
-            return string.Format("{0}\n{1}",GetComponent<ReagentHandler>().reagentName, GetComponent<ReagentHandler>().tooltipText);
+            return string.Format("{0}\n{1}",GetComponent<ReagentHandler>().itemName, GetComponent<ReagentHandler>().tooltipText);
         }
         else if (GetComponent<TooltipHandler>() != null)
         {
