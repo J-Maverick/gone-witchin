@@ -21,7 +21,6 @@ public class PotionHandler : BottleItemHandler
 
     public string craftingRecipe = "";
 
-    GameObject potionBottle;
     BottleType lastBottleType;
     bool lastCreateMode;
 
@@ -30,8 +29,8 @@ public class PotionHandler : BottleItemHandler
         if (createMode)
         {
             // Set bottle prefab and colors based on potion parameters
-            potionBottle = Instantiate(GetBottle(bottleType)) as GameObject;
-            potionBottle.transform.SetParent(GetComponent<Transform>(), false);
+            bottle = Instantiate(GetBottle(bottleType)) as GameObject;
+            bottle.transform.SetParent(GetComponent<Transform>(), false);
             SetBottleMaterialProperties();
         }
     }
@@ -39,7 +38,7 @@ public class PotionHandler : BottleItemHandler
     // Update is called once per frame
     void Update()
     {
-        if (createMode && potionBottle != null)
+        if (createMode && bottle != null)
         {
             SetBottleMaterialProperties();
         }
@@ -47,8 +46,8 @@ public class PotionHandler : BottleItemHandler
         {
             DestroyPotion();
             lastBottleType = bottleType;
-            potionBottle = Instantiate(GetBottle(bottleType)) as GameObject;
-            potionBottle.transform.SetParent(GetComponent<Transform>(), false);
+            bottle = Instantiate(GetBottle(bottleType)) as GameObject;
+            bottle.transform.SetParent(GetComponent<Transform>(), false);
             SetBottleMaterialProperties();
         }
         if (!createMode && lastCreateMode)
@@ -61,17 +60,17 @@ public class PotionHandler : BottleItemHandler
     public void SpawnPotion(GameObject target)
     {
         // Set bottle prefab and colors based on potion parameters
-        potionBottle = Instantiate(GetBottle(bottleType)) as GameObject;
-        potionBottle.GetComponent<TooltipHandler>().tooltipText = tooltipText;
-        potionBottle.GetComponent<TooltipHandler>().itemName = itemName;
-        potionBottle.gameObject.tag = "Draggable";
-        potionBottle.transform.SetParent(target.GetComponent<Transform>(), false);
+        bottle = Instantiate(GetBottle(bottleType)) as GameObject;
+        bottle.GetComponent<TooltipHandler>().tooltipText = tooltipText;
+        bottle.GetComponent<TooltipHandler>().itemName = itemName;
+        bottle.gameObject.tag = "Draggable";
+        bottle.transform.SetParent(target.GetComponent<Transform>(), false);
         SetBottleMaterialProperties();
     }
 
     public void DestroyPotion()
     {
-        DestroyImmediate(potionBottle);
+        DestroyImmediate(bottle);
     }
 
     public string GetCraftingRecipeString()
