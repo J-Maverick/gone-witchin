@@ -12,7 +12,8 @@ public class CameraController : MonoBehaviour
     public float cameraMoveTime = 0.3f;
     public float cameraRotationSlowingFactor = 10f;
 
-    private CameraLocation cameraLocation;
+    [HideInInspector]
+    public CameraLocation cameraLocation;
     private Transform target;
 
     private Vector3 velocity = Vector3.zero;

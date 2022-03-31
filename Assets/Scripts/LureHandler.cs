@@ -7,6 +7,12 @@ public class LureHandler : MonoBehaviour, IPointerClickHandler
 {
     public float lureRadius;
     public List<FishSwimHandler> fishies;
+    public Vector3 ghostPosition = Vector3.zero;
+
+    [HideInInspector]
+    public bool hovering = false;
+
+    private bool lurePlaced = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +22,10 @@ public class LureHandler : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clicked Lure");
-    }
-
-    public string MandatoryInterfaceMethod()
-    {
-        return "hello";
+        Debug.Log("Lure clicked.");
+        lurePlaced = true;
+        transform.Find("Lure").gameObject.SetActive(true);
+        transform.Find("GhostLure").gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,6 +37,17 @@ public class LureHandler : MonoBehaviour, IPointerClickHandler
         {
             fishCollider.SendMessage("TargetLure", Random.Range(0f, 1f));
         }
+
+        moveLure();
+    }
+
+    public void moveLure()
+    {
+        if (!lurePlaced)
+        {
+            transform.position = ghostPosition;
+        }
+
     }
 
     public void AddFish(FishSwimHandler fish)
